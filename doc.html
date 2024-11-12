@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيادة الدكتور خالد الدبيجي</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7eff6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            min-width: 100%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            padding: 30px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .team-member {
+            border: 1px solid #2980b9;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            background-color: #dff9fb;
+            flex: 1 1 calc(30% • 20px);
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        .social-icons {
+            padding: 10px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #2980b9;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #1f618d;
+        }
+        .service-detail {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+        }
+        .faq-item {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #2980b9;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .team-member {
+                flex: 1 1 calc(45% • 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .team-member {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>عيادة الدكتور خالد الدبيجي <span class="emoji">👨‍⚕️</span></h1>
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عن الدكتور</a>
+        <a href="#services">الخدمات</a>
+        <a href="#team">فريق العمل</a>
+        <a href="#faq">الأسئلة المتكررة</a>
+        <a href="#testimonials">استعراضات المرضى</a>
+        <a href="#contact">تواصل معنا</a>
+        <a href="#blog">مدونة</a>
+        <a href="#appointments">حجز موعد</a>
+    </nav>
+</header>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide"><img src="https://via.placeholder.com/1200x400/007bff/ffffff?text=أهلاً بكم في عيادتنا" alt="Slide 1" style="width: 100%;"></div>
+        <div class="slide"><img src="https://via.placeholder.com/1200x400/28a745/ffffff?text=خدماتنا المتنوعة" alt="Slide 2" style="width: 100%;"></div>
+        <div class="slide"><img src="https://via.placeholder.com/1200x400/ffc107/ffffff?text=صحة المرأة أولويتنا" alt="Slide 3" style="width: 100%;"></div>
+    </div>
+</div>
+
+<section id="about">
+    <h2>عن الدكتور خالد الدبيجي</h2>
+    <p>دكتور متخصص في النساء والتوليد، يتمتع بخبرة واسعة في تقديم الرعاية الصحية للنساء. يسعى الدكتور خالد إلى توفير بيئة مريحة وآمنة للمرضى. <span class="emoji">🤰</span></p>
+</section>
+
+<section id="services">
+    <h2>الخدمات المقدمة</h2>
+    <div class="service-detail">
+        <h3>استشارات طبية</h3>
+        <p>تقييم شامل لحالة المريض وتقديم نصائح طبية دقيقة.</p>
+    </div>
+    <div class="service-detail">
+        <h3>فحوصات الحمل</h3>
+        <p>متابعة دقيقة لصحة الأم والجنين خلال فترة الحمل.</p>
+    </div>
+    <div class="service-detail">
+        <h3>خدمات ما قبل وبعد الولادة</h3>
+        <p>دعم شامل للنساء خلال وبعد الحمل.</p>
+    </div>
+    <div class="service-detail">
+        <h3>تقديم المشورة بشأن وسائل منع الحمل</h3>
+        <p>خيارات متعددة تناسب كل حالة.</p>
+    </div>
+    <div class="service-detail">
+        <h3>علاج الأمراض النسائية</h3>
+        <p>تقديم العلاج المناسب لأمراض النساء المختلفة.</p>
+    </div>
+</section>
+
+<section id="team">
+    <h2>فريق العمل</h2>
+    <div class="team">
+        <div class="team-member">
+            <h3>د. ليلى أحمد</h3>
+            <p>اختصاصية النساء والتوليد.</p>
+        </div>
+        <div class="team-member">
+            <h3>د. سامي يوسف</h3>
+            <p>اختصاصي الأمراض النسائية.</p>
+        </div>
+        <div class="team-member">
+            <h3>د. مريم خالد</h3>
+            <p>اختصاصية طب الأطفال.</p>
+        </div>
+    </div>
+</section>
+
+<section id="faq">
+    <h2>الأسئلة المتكررة</h2>
+    <div class="faq-item">
+        <h3>ما هي أهمية الفحوصات الدورية؟</h3>
+        <p>تساعد الفحوصات الدورية في الكشف المبكر عن أي مشاكل صحية وضمان سلامة المرأة خلال فترة الحمل.</p>
+    </div>
+    <div class="faq-item">
+        <h3>متى يجب علي زيارة الطبيب أثناء الحمل؟</h3>
+        <p>يجب زيارة الطبيب في أي وقت تشعرين فيه بالقلق أو إذا واجهت أي أعراض غير طبيعية.</p>
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>استعراضات المرضى</h2>
+    <div class="testimonials">
+        <p><strong>أمينة حسن:</strong> "كانت تجربتي مع الدكتور خالد رائعة، شعرت بالراحة والثقة طوال فترة الحمل!"</p>
+        <p><strong>سارة محمد:</strong> "أوصي بشدة بكل من يحتاج إلى رعاية مهنية ودقيقة."</p>
+        <p><strong>منى علي:</strong> "الدكتور خالد هو الأفضل! دائماً ما يكون هناك دعم ورعاية." </p>
+    </div>
+</section>
+
+<section id="appointments">
+    <h2>حجز موعد</h2>
+    <form id="appointment-form">
+        <label for="app-name">الاسم:</label>
+        <input type="text" id="app-name" name="app-name" required>
+        
+        <label for="app-email">البريد الإلكتروني:</label>
+        <input type="email" id="app-email" name="app-email" required>
+        
+        <label for="app-date">تاريخ الموعد:</label>
+        <input type="date" id="app-date" name="app-date" required>
+        
+        <label for="app-time">وقت الموعد:</label>
+        <input type="time" id="app-time" name="app-time" required>
+
+        <button type="submit">حجز الموعد</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>تواصل معنا</h2>
+    <p>مركز أبشر لصحة المرأة • أ.د/خالد الدبيكى</p>
+    <p>للحجز والاستفسار: 01125910661 ☎️</p>
+    <p>أو اتصل على: 0222702948</p>
+    <p>العنوان: 96 شارع مصطفى النحاس • برج الأطباء، مدينة نصر، القاهرة الكبرى</p>
+    <p>أو شرفينا في المركز .. العنوان:</p>
+    <p>113 شارع مصطفى النحاس، تحت العمارة محل Noah للموبيليا، عمارة سامسونج قبل صيدلية العزبي مباشرةً، وقبل ماركت أولاد رجب بعمارتين (في اتجاه مدرسة المنهل)</p>
+    <form id="contact-form">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">رسالتك:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">إرسال</button>
+    </form>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+<section id="blog">
+    <h2>مقالات المدونة</h2>
+    <div class="article">
+        <h3>أهمية الفحوصات الدورية للحمل</h3>
+        <p>تعتبر الفحوصات الدورية خلال الحمل أمرًا حيويًا لضمان صحة الأم والجنين. تساعد هذه الفحوصات في الكشف المبكر عن أي مشاكل محتملة وتقديم الرعاية المناسبة.</p>
+    </div>
+    <div class="article">
+        <h3>نصائح للحفاظ على صحة المرأة بعد الولادة</h3>
+        <p>بعد الولادة، تحتاج المرأة إلى العناية بنفسها جيدًا. من المهم اتباع نظام غذائي صحي، والحصول على قسط كافٍ من الراحة، ومتابعة الفحوصات الطبية.</p>
+    </div>
+    <div class="article">
+        <h3>كيفية التعامل مع القلق أثناء الحمل</h3>
+        <p>القلق أمر شائع بين النساء الحوامل. من المهم تعلم تقنيات الاسترخاء، مثل التنفس العميق والتمارين الخفيفة، للمساعدة في تقليل التوتر.</p>
+    </div>
+</section>
+
+<footer>
+    <p>جميع الحقوق محفوظة &copy; 2024 دكتور خالد الدبيجي</p>
+</footer>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    function showSlide(index) {
+        if (index >= totalSlides) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = totalSlides • 1;
+        } else {
+            currentSlide = index;
+        }
+        slides.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+    }
+
+    setInterval(() => {
+        showSlide(currentSlide + 1);
+    }, 3000);
+</script>
+
+</body>
+</html>
+
